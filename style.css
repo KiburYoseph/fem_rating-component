@@ -23,8 +23,8 @@ body {
     border-radius: 100%;
     background-color: hsla(0, 0%, 100%, 0.04);
     width: min-content;
-    padding: 0.9rem 1rem;
-    display: felx;
+    padding: 0.9rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
