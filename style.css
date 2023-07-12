@@ -11,12 +11,16 @@ body {
     align-items: center;
 }
 
+/*FIRST CARD*/
+
+
 .firstCard {
     background-color: hsl(213, 19%, 18%);
     border-radius: 10%;
     width: 22rem;
     height: 22rem;
     padding: 2rem;
+    transition: 300ms;
 }
 
 .starDiv {
@@ -31,9 +35,12 @@ body {
 
 h1 {
     color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 p {
+    font-size: 0.89rem;
     color: hsl(217, 12%, 63%);
     line-height: 1.5rem;
     text-align: left;
@@ -43,20 +50,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .numbers {
     background-color: hsla(0, 0%, 100%, 0.04);
     border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: hsl(217, 12%, 63%);
     transition: 300ms;
-    font-weight: 600;
+    font-weight: 100;
     cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%) !important;
+    color: white !important;
 }
 
 .submitButton {
@@ -83,4 +97,37 @@ p {
 .numbers:hover {
     background-color: hsl(25, 97%, 53%);
     color: white;
+}
+
+
+/*SECOND CARD*/
+
+.secondCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10%;
+    width: 23rem;
+    height: 22rem;
+    padding: 2rem 2rem;
+    opacity: 0;
+    display: none;
+    transition: 300ms;
+}
+
+h2 {
+    color: hsl(25, 97%, 53%);
+    font-size: 0.9rem;
+    font-weight: 100;
+    background-color: hsla(0, 0%, 100%, 0.04);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.secondCard > p {
+    text-align: center;
+    margin-top: 0px;
 }
